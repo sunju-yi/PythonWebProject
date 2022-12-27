@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <link href="MLProject.css" rel="stylesheet" type="text/css"/>
-    
+    <script src="project.js"></script>
     <title>MainPage</title>
 </head>
 <body>
-    <div id="header">
-        <div id="main">
-            <img id="imageLogo" src="image/ProjectLogo.png">
-            <a href="main.html"><img id="textLogo" src="image/MainLogo.png"></a>
-        </div>
-        <div id="searchingBox">
-            <form>
-                <input id="searchingBar" type="text" placeholder="검색창"/>
-                <button><img id="searchingIcon" src="image/searching.png"></button>
-            </form>
-        </div>
-        <div id="login">
-            <a href="#">로그인</a>
-        </div>
-        <div id="newbie">
-            <a href="#">회원가입</a>
-        </div>
-        <!--
-        <div id="login">
-            <a href="#"><img src="image/login.png" alt="login"></a>
-        </div>
-        <div id="newbie">
-            <a href="#"><img src="image/newbie.png" alt="newbie"></a>
-        </div>
-        -->
-    </div>
-    <hr>
-    <div id="naviagtion">
-        <ul>
-            <li id="firstlist"><a href="musicboard.html">음악</a></li>
-            <li><a href="paintboard.html">그림</a></li>
-            <li><a href="freeboard.html">자유게시판</a></li>
-            <li><a href="advertise.html">광고</a></li>
-        </ul>
-    </div>
+    <div w3-include-html="header.html"></div>
+    <script>
+        includeHTML();
+    </script>
     <div id="center_ad">상단 광고</div>
     <div id="content_body">
         <aside>
@@ -73,8 +42,3 @@
         footer 내용 입력 (건의 이메일?)
     </div>
 </html>
-
-<!--
-
-
-#0E75EB -->

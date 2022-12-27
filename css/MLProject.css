@@ -31,12 +31,12 @@
 #searchingBox{
     display:inline-flex;
     position : relative;
-    margin: 10px 30px auto 20px;
+    margin: 10px 30px auto 40px;
     padding : 11px;
     text-align: center;
     width : 500px;
     height : 50px;
-    background: linear-gradient(to right, #CAF9FC 0%, #0E75EB 100%);
+    background: linear-gradient(to right,#0E75EB 0%, #d9fcfe 100%);
     border-radius: 60px;
 }
 #searchingBar {
@@ -78,7 +78,6 @@ ul{
     margin: auto;
     padding: 5px;
     overflow:hidden;
-    background: #B5CCEB ;
 }
 li{
     list-style: none;
@@ -91,14 +90,14 @@ li{
 li a{
     display:block;
     margin-left : 20px;
-    color:#360055;
+    color:#010000;
     padding:8px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
 }
 li a:hover{
-    background-color: khaki;
+    background-color: rgb(255, 230, 0);
     color:white;
 }
 /*상단광고*/
@@ -153,7 +152,7 @@ article{
     display : inline-flex;
     padding : 8px 10px;
     height : 16px;
-    border-bottom:1px solid #e1e1e1;
+    border-bottom:1px solid black;
 }
 .list-wrap div{
     margin-right : 5px;
@@ -177,10 +176,11 @@ article{
     text-align: center;
 } 
 .content-ul{
-    background-color : lightgray;
+    background-color : pink;
+    font-weight: bold;
 }
 .content-li{
-    background: rgb(227, 225, 225);
+    background: white;
 }
 /*하단*/
 #footer{

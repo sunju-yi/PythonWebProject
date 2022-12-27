@@ -11,34 +11,18 @@
 </head>
 <body>
     <div w3-include-html="header.html"></div>
-    <script>
-        includeHTML();
-    </script>
-    <div id="center_ad">상단 광고</div>
+    
+    <div w3-include-html="top_ad.html"></div>
     <div id="content_body">
-        <aside>
-            <div class="ad_box" id="left_ad">좌측 광고</div>
-        </aside>
-        <section>
-            <div class="content_box">
-                <div class="top_billboard">
-                    <div class="billboard">음악</div>
-                    <div class="billboard">그림</div>
-                </div>
-                <div class="bottom_billboard">
-                    <div class="billboard">자유</div>
-                    <div class="billboard">실시간</div>
-                </div>
-            </div>
-        </section>
-        <aside>
-            <div class="ad_box" id="right_ad">우측 광고</div>
-        </aside>
+        <div w3-include-html="left_ad.html"></div>
+        <div w3-include-html="main_content.html"></div>
+        <div w3-include-html="right_ad.html"></div>
     </div>
     
 </body>
     <hr>
-    <div id="footer">
-        footer 내용 입력 (건의 이메일?)
-    </div>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
 </html>

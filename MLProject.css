@@ -73,7 +73,7 @@ a{
     margin : 40px auto auto 20px;
 }
 /*네비게이션바*/
-ul {
+ul{
     list-style-type: none;
     margin: auto;
     padding: 5px;
@@ -111,7 +111,7 @@ li a:hover{
     background-color : #0E75EB;
     display : inline-block;
 }
-/*좌측광고&게시판&우측광고*/
+/*좌측광고&우측광고*/
 #content_body{
     display:flex;
 }
@@ -124,38 +124,69 @@ li a:hover{
     font-weight:bold;
     margin:10px;
 }
-.content_box{
-    border : 2px solid #000;
-    width : 850px;
-    height : 850px;
-    text-align:center;
-    line-height : 100px;
-    font-weight:bold;
-    margin:20px;
-    background:yellow;
-    display:flex;
-}
 #left_ad{
     background:#0E75EB;
 }
-.content_box .billboard {
-    border:1px solid #030;
-    width : 400px;
-    height : 400px;
-    text-align : center;
-    line-height:100px;
-    font-weight:bold;
-    margin:10px;
-    background:pink;
-    overflow:hidden;
-}
 #right_ad{
     background:#0E75EB;
+}
+/*메인 추천&실시간*/
+article{
+    display : block;
+    overflow:hidden;
+    margin : 5px;
+}
+.list-wrap {
+    margin-left : 15px;
+    width : 900px;
+    height : 420px;
+    display:inline-flex;
+    margin-bottom : 40px;
+}
+.list-common{
+    width : 400px;
+}
+.list-common-right{
+    width : 500px;
+}
+.txtwrap {
+    display : inline-flex;
+    padding : 8px 10px;
+    height : 16px;
+    border-bottom:1px solid #e1e1e1;
+}
+.list-wrap div{
+    margin-right : 5px;
+    font-size: 15px;
+}
+.order, .hot{
+    width : 70px;
+    text-align: center;
+}
+.name{
+    width : 200px;
+    text-align: center;
+}
+.torder, .thot{
+    width : 60px;
+    text-align: center;
+} 
+.tobject, .tname{
+    width : 160px;
+    overflow: hidden;
+    text-align: center;
+} 
+.content-ul{
+    background-color : lightgray;
+}
+.content-li{
+    background: rgb(227, 225, 225);
 }
 /*하단*/
 #footer{
     background: #EBE;
 }
+
 
 
     /* RGB Gradient 

@@ -11,17 +11,19 @@
 </head>
 <body>
     <div w3-include-html="header.html"></div>
-    
-    <div w3-include-html="top_ad.html"></div>
-    <div id="content_body">
-        <div w3-include-html="left_ad.html"></div>
-        <div w3-include-html="main_content.html"></div>
-        <div w3-include-html="right_ad.html"></div>
+    <div id="bodycap">
+        <div w3-include-html="top_ad.html"></div>
+        <div id="content_body">
+            <div w3-include-html="left_ad.html"></div>
+            <div w3-include-html="main_content.html" id="maincontent"></div>
+            <div w3-include-html="right_ad.html"></div>
+        </div>
     </div>
-    
 </body>
     <hr>
-    <div w3-include-html="footer.html"></div>
+    <div id="footercap">
+        <div w3-include-html="footer.html"></div>
+    </div>
     <script>
         includeHTML();
     </script>

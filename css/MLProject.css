@@ -1,12 +1,19 @@
-head, body{
-    display:center;
+#headercap{
+    margin-left:220px;
+}
+#bodycap, #musicbody, #paintbody{
+    margin-left:220px;
+}
+#footercap{
+    margin-left:220px;
 }
 /*메인로고&검색창&로그인&회원가입*/
 #header{
     display:inline-flex;
-    width : 1400px;
+    width : 1480px;
     height : 110px;
-    margin : 0;
+    margin : 0 auto;
+    background: linear-gradient(to right,#0E75EB 0%, #d9fcfe 100%);
 }
 /*로고*/
 #main{
@@ -38,7 +45,7 @@ head, body{
     text-align: center;
     width : 500px;
     height : 50px;
-    background: linear-gradient(to right,#0E75EB 0%, #d9fcfe 100%);
+
     border-radius: 60px;
 }
 #searchingBar {
@@ -63,7 +70,7 @@ button{
 /*로그인&회원가입*/
 a{
     text-decoration: none;
-    color : skyblue;
+    color : darkcyan;
     font-weight: bold;
 }
 #login{
@@ -112,6 +119,14 @@ li a:hover{
     background-color : #0E75EB;
     display : inline-block;
 }
+.top_ad{
+    width : 850px;
+    height : 150px;
+}
+.aside_ad{
+    width : 250px;
+    height : 850px;
+}
 /*좌측광고&우측광고*/
 #content_body{
     display:flex;
@@ -132,6 +147,9 @@ li a:hover{
     background:#0E75EB;
 }
 /*메인 추천&실시간*/
+#maincontent{
+    width : 940px;
+}
 article{
     display : block;
     overflow:hidden;
@@ -184,6 +202,18 @@ article{
 .content-li{
     background: white;
 }
+/*음악 메인*/
+#musicbody, #paintbody{
+    display:flex;
+}
+#musicmain, #paintmain{
+    width : 1141px;
+    height : 1141px;
+    border : 1px solid black;
+    background:rgb(255, 230, 0);
+    margin-top : 40px;
+}
+
 /*하단*/
 #footer{
     background: #EBE;

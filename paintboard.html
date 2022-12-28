@@ -10,14 +10,13 @@
 </head>
 <body>
     <div w3-include-html="header.html"></div>
-    <div w3-include-html="paintfilter.html"></div>
+    <div id="paintbody">
+        <div w3-include-html="paintfilter.html"></div>
+        <div id="paintmain"></div>
+    </div>
+
     <script>
         includeHTML();
-        </script>
-    <div>
-        <table>
-            <tr>paint</tr>
-        </table>
-    </div>
+    </script>
 </body>
 </html>

@@ -3990,7 +3990,7 @@ label {
 }
 
 .search_wrapper_inner {
-    width: 1410px;
+    width: 287px;
     margin: 0 auto
 }
 
@@ -4274,11 +4274,11 @@ label {
 .search_contents_area {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .image-list-filter {
-    display: none
+    display: none;
 }
 
 .image-list-container {

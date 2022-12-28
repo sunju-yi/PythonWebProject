@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Webproject</name>
+=======
+	<name>MLWebProject</name>
+>>>>>>> 89011fcb5a427e6d980dff3bd57d51bf3beb5394
 	<comment></comment>
 	<projects>
 	</projects>

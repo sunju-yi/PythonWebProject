@@ -1,0 +1,137 @@
+
+/*메인로고&검색창&로그인&회원가입*/
+#header{
+    display:block;
+    width : 1455px;
+    height : 110px;
+    margin : 0;
+}
+#main{
+    display:inline-flex;
+    margin: 10px 20px auto 300px;
+    float:left;
+    text-align:center;
+    background-color:#0E75EB ;
+    width : 100px;
+    height : 80px;
+}
+#searchingBox{
+    display:inline-flex;
+    margin: 10px 50px auto 20px;
+    padding : 11px;
+    text-align: center;
+    width : 500px;
+    height : 60px;
+    background-color: blue;
+}
+#searchingBar {
+    width : 420px;
+    height : 50px;
+    margin: auto;
+}
+#searchingIcon{
+    width: 50px;
+    height : 55px;
+    float:right;
+    margin: auto 9px auto 10px;
+    display:flex;
+    color:#EBE;
+    background-color: white;
+    border: radius 50%;
+    align-items: center;
+    justify-content: center;
+}
+#login{
+    display:inline-block;
+    margin : 10px auto auto 20px;
+}
+#newbie{
+    display:inline-block;
+    margin : 10px auto auto 20px;
+}
+/*네비게이션바*/
+ul {
+    background-color : #88DEF6 ;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow:hidden;
+    background: linear-gradient(to right, #83f0f8 0%, #59ccfd 50%, #042e5e 100%);
+}
+li{
+    list-style: none;
+    display:inline-block;
+    font-size: 20px;
+}
+#firstlist{
+    margin-left:500px;
+}
+li a{
+    display:block;
+    margin-left : 20px;
+    background-color: #A8EEF9;
+    color:#6600FF;
+    padding:8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+li a:hover{
+    background-color: khaki;
+    color:white;
+}
+/*상단광고*/
+#center_ad{
+    width : 850px;
+    height : 150px;
+    border : 1px solid;
+    border-color: black;
+    margin : 10px auto 10px 300px;
+    background-color : #0E75EB;
+    display : inline-block;
+}
+/*좌측광고&게시판&우측광고*/
+#content_body{
+    display:flex;
+}
+.ad_box{
+    border : 2px solid #000;
+    width : 250px;
+    height : 850px;
+    text-align:center;
+    line-height : 100px;
+    font-weight:bold;
+    margin:10px;
+}
+.content_box{
+    border : 2px solid #000;
+    width : 850px;
+    height : 850px;
+    text-align:center;
+    line-height : 100px;
+    font-weight:bold;
+    margin:20px;
+    background:yellow;
+    display:flex;
+}
+#left_ad{
+    background:#0E75EB;
+}
+.content_box .billboard {
+    border:1px solid #030;
+    width : 400px;
+    height : 400px;
+    text-align : center;
+    line-height:100px;
+    font-weight:bold;
+    margin:10px;
+    background:pink;
+    overflow:hidden;
+}
+#right_ad{
+    background:#0E75EB;
+}
+/*하단*/
+#footer{
+    background: #EBE;
+}

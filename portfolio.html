@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/port1.css">
+
+    <link rel="preload" href="/static/fonts/open_sans/opensans-400-latin21.woff2" as="font" crossorigin="anonymous" />
+
+    <title>Portfolio</title>
+    <style>
+        .tab_menu {
+            border-top: 0;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        #stats a,
+        #stats span {
+            white-space: nowrap;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        #stats span i {
+            cursor: default;
+        }
+
+        .edit_profile_links {
+            opacity: 0;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transition: .2s;
+        }
+
+        #hero:hover .edit_profile_links {
+            display: block;
+            opacity: 1;
+        }
+
+        .user_links {
+            position: absolute;
+            left: 20px;
+            bottom: 14px;
+        }
+
+        .user_links a {
+            margin-right: 12px;
+            color: #fff;
+        }
+
+        .action_buttons {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            text-shadow: none;
+        }
+
+        @media screen and (max-width:1080px) {
+            .action_buttons {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                margin: 18px 0 4px;
+            }
+
+            .user_links {
+                display: none;
+            }
+        }
+
+        .badges {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badges>span {
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 22px;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .badges>span .icon {
+            top: 0;
+        }
+
+        .cameras a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            margin: 0 0 30px 40px;
+            color: #555;
+            font-size: 13px;
+        }
+
+        .cameras i {
+            display: inline-block;
+            line-height: 130px;
+        }
+
+        .cameras img {
+            vertical-align: middle;
+        }
+
+        .cameras div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .followers img {
+            margin: 0 0 10px 13px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .flex_grid .active {
+            background: rgba(255, 0, 0, .7) !important;
+        }
+
+        .tab_menu+div.profile-audio {
+            background: white;
+        }
+
+        .tab_menu[data-tab="audio"] {
+            border-bottom: none;
+        }
+
+        .pixicon-soundcloud {
+            font-size: 1.3rem;
+            color: #efefef;
+            position: relative;
+            top: 2px;
+        }
+
+        .pixicon2-music {
+            vertical-align: middle;
+        }
+
+        .highlight_keywords {
+            margin: 5px 0 0;
+        }
+
+        .highlight_keywords a {
+            color: white;
+            margin: 5px;
+        }
+
+        .container {
+            width: 184px;
+            height: 184px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .container>a>img {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 5px 5px 5px 5px;
+        }
+
+        .items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .items_li {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border: 0;
+            float: left;
+        }
+
+
+        .container {
+            width: 184px;
+            height: 184px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .container>a>img {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 5px 5px 5px 5px;
+        }
+
+        .items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .items_li {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border: 0;
+            float: left;
+        }
+
+        .main-contents {
+            padding: 22px 20px;
+        }
+    </style>
+</head>
+
+<body class=" ">
+    <div id="wrapper">
+        <div id="content" class="clearfix">
+            <div id="hero" style="margin:0 0 20px;background:#96a6bd;text-align:center">
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)"></div>
+                <div style="position:relative;padding-bottom:16px">
+                    <h1 style="font-size:32px;padding-top:25px">작가이름</h1>
+                    <h2 style="max-width:none;line-height:1.5;font-size:15px;padding:10px 20px 0">
+                        Ralf Ruppert &nbsp;•&nbsp; 97833 Frammersbach/Deutschland &nbsp;•&nbsp; 멤버 2021년 4월 28일 부터
+                    </h2>
+                    <div style="text-align:center;margin:22px 0 20px">
+                        <img style="border:2px solid #fff;width:125px;height:125px;border-radius:90px"
+                            src="프로필 그림주소" alt="프로필 그림주소">
+                    </div>
+                    <div id="stats" style="max-height:22px;overflow:hidden;padding:0 15px">
+                        <a href="?tab=ec" title="편집자 선정"><i class="icon icon_ec"></i> 3</a>
+                        <span title="이미지"><i class="icon icon_images"></i> 288</span>
+                        <span title="다운로드"><i class="icon icon_download"></i> 92,432</span>
+                        <span title="좋아요"><i class="pixicon-heart heart-like-icon-sm"></i> 3,355</span>
+                        <span title="댓글" class="hide-lg"><i class="icon icon_comment_filled"></i> 701</span>
+                        <span title="팔로워" class="hide-lg"><i class="icon icon_followers"></i> 85</span>
+                    </div>
+                    <div class="action_buttons">
+                        <a href="/ko/accounts/messages/compose/21380246/?next=/ko/users/ralf1403-21380246/"
+                            class="ua-engagement-message message_button show-entry-point-modal pure-button pure-button-primary button-sm"
+                            data-w="468" data-no-overlay-close="">메시지</a>
+                        <span id="follow_button"
+                            class="ua-engagement-follow pure-button pure-button-primary button-sm show-entry-point-modal "
+                            data-w="442" data-href="/ko/accounts/follow/21380246/"><i class="check">✓</i> 팔로우</span>
+                    </div>
+                </div>
+                <div class="edit_profile_links">
+                </div>
+            </div>
+            <div class="tab_menu profile" data-tab="most-relevant"><a href="?tab=most-relevant"
+                    class="  selected">인기</a><a href="?tab=latest" class="">최신순</a><a href="?tab=about"
+                    class="">자기소개</a><a href="?tab=ec" class="False ">편집자 선정</a></div>
+            <div class="profile-most-relevant">
+                <div>
+                    <p style="margin:20px 5px 14px;font-size:15px"><b>All items</b></p>
+                    <div class="flex_grid credits">
+                        <ul class="items">
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/blueProjectLogo.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/bluestar-removebg.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/login.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/searching.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/newbie.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/naivestar-removebg.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/naivestar-removebg.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/naivestar-removebg.png"></a>
+                                </div>
+                            </li>
+                            <li class="items_li">
+                                <div class="container">
+                                    <a href=""><img src="image/naivestar-removebg.png"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin:40px 20px 10px">
+                <div class="paginator"><span class="pure-button">1</span><a class="pure-button"
+                        href="/ko/users/ralf1403-21380246/?tab=most-relevant&pagi=2">2</a><a class="pure-button"
+                        href="/ko/users/ralf1403-21380246/?tab=most-relevant&pagi=3">3</a><a class="pure-button"
+                        href="/ko/users/ralf1403-21380246/?tab=most-relevant&pagi=4">4</a><a class="pure-button"
+                        href="/ko/users/ralf1403-21380246/?tab=most-relevant&pagi=5">5</a><a class="pure-button next"
+                        href="/ko/users/ralf1403-21380246/?tab=most-relevant&pagi=2"><i>›</i></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
